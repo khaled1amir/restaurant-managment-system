@@ -15,9 +15,13 @@
             p<span>o</span><span>s</span>
         </h1>
         <div class="btnBox">
-            <button class="btn">
+            <button class="button" id="addTable">
                 Add Table
             </button>
+            <div class="selectFloor">
+                <p>First floor</p>
+                <p>Second floor</p>
+            </div>
         </div>
     </header>
     <main>
@@ -64,7 +68,33 @@
             </div>
         </aside>
         <section class="home" id="home-content">
-            <div class="tablesContainer"></div>
+            <div class="tablesContainer">
+                <div class="tablesSectionHeader">
+                    <h1>table list</h1>
+                    <div id="floorsButtonsContainer">
+                        <button class="btn" id="firstFloor">First Floor</button>
+                        <button class="btn" id="secondFloor">Second Floor</button>
+                    </div>
+                </div>
+                <div class="tables" id="tables"></div>
+            </div>
+            <div class="tableOrder" id="tableOrder">
+                <h1>Order #</h1>
+                <div class="infoBar">
+                    <div>
+                        People: <span id="peopleCount">4</span>
+                    </div>
+                    <div>
+                        Table: <span id="tableNum">1</span>
+                    </div>
+                </div>
+                <div class="orderContents" id="orderContents">
+                    <div>
+                        <img src="./no-order-selected.PNG" alt="No Table has been selected">
+                        <p>No products in this <br>moment added</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <script src="main.js"></script>

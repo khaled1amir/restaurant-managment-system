@@ -5,59 +5,204 @@
     scroll-behavior: smooth;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 header {
     width: 100%;
-    height: 120px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 60px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(193, 193, 193);
 }
+
 header .logo {
     text-transform: uppercase;
 }
+
 header .logo span:first-of-type {
     color: brown;
 }
+
 header .logo span:nth-child(2) {
     color: green;
 }
-.btn {
+.buttonBox {
+    position: relative;
+}
+.button {
     width: 150px;
     height: 40px;
     border-radius: 6px;
     border: none;
     background-color: #B1CED4;
+    cursor: pointer;
+}
+.selectFloor {
+    position: absolute;
+    width: 150px;
+    margin-top: 15px;
+    height: 100px;
+    background-color: red;
+    padding: 15px;
+    font-size: 18px;
+}
+.selectFloor p{
+    margin-bottom: 15px;
+    cursor: pointer;
+    user-select: none;
 }
 main {
     width: 100%;
-    height: calc(100vh - 120px);
-    background-color: red;
+    height: calc(100vh - 100px);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 aside {
     height: 100%;
     width: 10%;
-    border-right: 1px solid grey;
+    border-right: 1px solid rgb(193, 193, 193);
     background-color: #fff;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
 }
+
 aside div {
     text-align: center;
     font-size: 18px;
     cursor: pointer;
 }
+
 aside div p {
     color: #A2774C;
 }
+
 .home {
-    padding: 60px;
     width: 90%;
     height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .tablesContainer {
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    border-right: 1px solid rgb(193, 193, 193);
+    padding: 20px;
+}
+
+.home .tablesContainer .tablesSectionHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(193, 193, 193);
+    padding: 15px 0;
+}
+
+.home .tablesContainer .tablesSectionHeader h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.home .tablesContainer .tablesSectionHeader div {
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .tablesContainer .tablesSectionHeader .btn {
+    width: 112px;
+    height: 39px;
+    background-color: #FAFAFA;
+    color: #D9D9D9;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+#firstFloor {
+    background-color: #E8C5A3;
+    color: black;
+}
+
+.tables {
+    padding: 30px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 80%;
+}
+.tables .row1,
+.tables .row2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tables .row1 {
+    margin-bottom: 80px;
+}
+.table {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+.table .tableShape {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgb(193, 193, 193);
+    transition: 0.2s background-color;
+}
+.table .tableShape:hover {
+    background-color: #B1CED4;
+}
+.tableOrder {
+    width: 30%;
+    height: 100%;
+    border-left: 1px solid rgb(193, 193, 193);
+    padding: 30px;
+}
+.tableOrder h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.tableOrder .infoBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(193, 193, 193);
+}
+.tableOrder .orderContents {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tableOrder .orderContents div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tableOrder .orderContents img {
+    width: 150px;
+    margin-bottom: 25px;
+}
+.tableOrder .orderContents p {
+    text-transform: uppercase;
+    text-align: center;
 }
